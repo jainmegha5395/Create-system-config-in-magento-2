@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+	  <add id="Megha_System::custom" title="CUSTOM" translate="title" module="Megha_System" sortOrder="10" dependsOnModule="Megha_System" resource="Megha_System::custom"/>
+	  <add id="Megha_System::settings" title="Settings" translate="title" module="Megha_System" parent="Megha_System::custom" sortOrder="20" dependsOnModule="Megha_System" resource="Megha_System::settings" action="adminhtml/system_config/edit/section/custom_settings" />
+	</menu>
+</config>

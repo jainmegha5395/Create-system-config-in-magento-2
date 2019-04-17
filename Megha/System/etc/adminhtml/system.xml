@@ -1,0 +1,31 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="custom_tab" translate="label" sortOrder="250">
+            <label>Custom</label>
+        </tab>
+        <section id="custom_settings" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>settings-separator</class>
+            <label>Settings</label>
+            <tab>custom_tab</tab>
+            <resource>Megha_System::custom_settings</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Module Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+			<group id="storefront" translate="label" sortOrder="11" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Storefront</label>
+                <field id="news_link" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>News Link</label>
+                    <comment>This is news link</comment>
+                </field>
+                <field id="set_limit" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Set The Number of Limit</label>
+                    <comment>Set the number of limit for showing latest news</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
